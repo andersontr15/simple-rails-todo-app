@@ -1,0 +1,14 @@
+<h1>Create a new todo</h1>
+<div>
+  <form action="/todos" method="POST">
+    <input type="text" placeholder="name" name="todo[name]">
+    <br />
+    <br />
+    <label for="completed">Completed</label>
+    <input type="checkbox" name="todo[completed]" placeholder="completed">
+    <%= token_tag %>
+    <br />
+    <br />
+    <input type="submit" value="Create a new todo">
+  </form>
+</div>
